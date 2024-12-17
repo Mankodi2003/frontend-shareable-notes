@@ -1,0 +1,218 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+body{
+  background: #f4f4f9; /* Soft neutral background */
+}
+
+.header {
+  width: 100%;
+  line-height: 100px;
+  background-color: #4a90e2; /* Calming blue for the header */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  color: #ffffff; /* White for text contrast */
+  box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.main_note {
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+}
+
+.my_notes h1 {
+  color: #2c3e50; /* Dark blue for headings */
+}
+
+.my_notes p {
+  color: #7f8c8d; /* Neutral grey for text */
+}
+
+form {
+  min-height: 50px;
+  color: #ffffff;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  background-color: #ffffff; /* Clean white form background */
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #34495e; /* Dark grey for input text */
+}
+
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #34495e; /* Consistent text color */
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff; /* Vibrant blue for buttons */
+  color: #ffffff; /* White text */
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: none;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+.note {
+  background: #fef9e7; /* Soft yellow for notes background */
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #2c3e50; /* Dark grey for note titles */
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #34495e; /* Consistent text color */
+}
+
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  border: none;
+  width: 50px;
+  color: #007bff; /* Blue for icons */
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+}
+
+.notes_list {
+    margin-top: 20px;
+}
+
+.note_item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.note_actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.note_actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.note_actions button:hover {
+    color: #007bff;
+}
+
+
+.editor_controls button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: #2c3e50; /* Dark grey for editor controls */
+}
+
+.editor_controls button:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+.notes_list {
+  margin-top: 20px;
+}
+
+.note_card {
+  background-color: #ffffff; /* White for card background */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Neutral grey border */
+}
+
+.note_card.pinned {
+  border-left: 5px solid #f39c12; /* Golden yellow for pinned notes */
+}
+
+.note_actions button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: #34495e; /* Neutral grey for actions */
+}
+
+.note_actions button:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+.deleteIcon {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.note .btn:hover {
+  background-color: #f39c12; /* Golden yellow for hover */
+}
+
+.note .btn:hover .deleteIcon {
+  color: #fff; /* White for hover icon */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 0px;
+  text-align: center;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #4a90e2; /* Matching footer with header */
+  color: #ffffff;
+}
